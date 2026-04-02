@@ -37,6 +37,7 @@ export default function ReceiptModal({ sale, onClose }: { sale: any; onClose: ()
           fontFamily:"'Courier New',monospace", fontSize:13, maxWidth:340, margin:'0 auto'
         }}>
           <h2 style={{textAlign:'center',margin:'0 0 2px',fontFamily:'Georgia,serif',fontSize:18}}>GORAYO WHOLESALERS</h2>
+          <div style={{textAlign:'center',color:'#555',fontSize:11,marginBottom:4}}>Wholesale &amp; Retail</div>
           <div style={{textAlign:'center',color:'#333',fontSize:10,marginBottom:10}}>KCB Paybill: 522533 | Business No: 8062104</div>
           <div style={{borderTop:'1px dashed #999',margin:'8px 0'}}/>
 

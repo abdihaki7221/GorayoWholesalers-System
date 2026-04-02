@@ -2,7 +2,11 @@
 require('dotenv').config({ path: '.env.local' })
 const { Pool } = require('pg')
 const crypto = require('crypto')
-const pool = new Pool({ connectionString: process.env.DATABASE_URL })
+const connStr = process.env.DATABASE_URL
+const pool = new Pool({
+  connectionString: connStr,
+  ssl: connStr && connStr.includes('neon.tech') ? { rejectUnauthorized: false } : undefined,
+})
 
 function hashPassword(password) {
   const salt = crypto.randomBytes(16).toString('hex')

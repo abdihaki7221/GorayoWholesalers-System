@@ -31,6 +31,7 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="px-5 py-5 border-b border-border">
         <h1 className="font-serif text-accent text-xl tracking-tight">Gorayo Wholesalers</h1>
+        <p className="text-xs text-muted uppercase tracking-widest mt-1">Wholesale & Retail</p>
       </div>
 
       {/* Nav */}
